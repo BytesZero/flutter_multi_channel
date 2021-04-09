@@ -21,6 +21,22 @@ if (flutterVersionName == null) {
     flutterVersionName = '1.0'
 }
 
+// android/app/build.gradle
+/// 获取取到参数使用,这里设置一下默认值
+def dartEnvironmentVariables = [
+        APP_CHANNEL: 'main',
+        OTHER_VAR: 'other',
+]
+
+if (project.hasProperty('dart-defines')) {
+    dartEnvironmentVariables = dartEnvironmentVariables + project.property('dart-defines')
+            .split(',')
+            .collectEntries { entry ->
+                def pair = URLDecoder.decode(entry).split('=')
+                [(pair.first()): pair.last()]
+            }
+}
+
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
@@ -50,6 +66,20 @@ android {
             // TODO: Add your own signing config for the release build.
             // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig signingConfigs.debug
+        }
+    }
+
+    // 重命名 apk
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            if(variant.buildType.name == "release"){
+                // 获取版本
+                def versionName = variant.versionName
+                def versionCode = variant.versionName
+                // 设置新名称
+                def newApkName ="app_v${defaultConfig.versionName}_${defaultConfig.versionCode}_channel_${dartEnvironmentVariables.APP_CHANNEL}.apk"
+                outputFileName = new File(newApkName)
+            }
         }
     }
 }
