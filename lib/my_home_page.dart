@@ -28,6 +28,12 @@ class _MyHomePageState extends State<MyHomePage> {
               '其他参数：${EnvironmentConfig.OTHER_VAR}',
               style: Theme.of(context).textTheme.bodyText1,
             ),
+            EnvironmentConfig.APP_CHANNEL == 'Mi'
+                ? Text(
+                    "小米渠道显示",
+                    style: Theme.of(context).textTheme.bodyText1,
+                  )
+                : SizedBox(),
           ],
         ),
       ),
