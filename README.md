@@ -6,6 +6,12 @@
 在之前原生（Android、iOS）开发 App 有各种工具来辅助我们完成多渠道打包。
 在我们开发过程中也需要为渠道功能负责，原生的开发工具就基本满足我们调试渠道包内容，但是在 Flutter 上需要更多的配置才可以完成，下文将一一介绍从配置=>调试=>打包的全部流程和细节。
 
+## 用到的脚本
+使用前请是用 `chmod a+x fapkc.sh` 赋予可运行权限
+
+- [fapk_channel_all.sh](/shell/fapk_channel_all.sh)
+- [fapkc.sh](/shell/fapk_channel_all.sh)
+
 ## 详细文章链接
 - [掘金](https://juejin.cn/user/764915820276439)
 - [CSDN](https://juejin.cn/user/764915820276439)
