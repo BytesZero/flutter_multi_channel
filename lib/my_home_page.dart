@@ -21,11 +21,11 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'App 渠道：main',
+              'App 渠道：${EnvironmentConfig.APP_CHANNEL}',
               style: Theme.of(context).textTheme.bodyText1,
             ),
             Text(
-              '其他参数：1',
+              '其他参数：${EnvironmentConfig.OTHER_VAR}',
               style: Theme.of(context).textTheme.bodyText1,
             ),
           ],
