@@ -24,7 +24,7 @@ class EnvironmentConfig {
 使用前请是用 `chmod a+x fapkc.sh` 赋予可运行权限
 
 - [fapk_channel_all.sh](/shell/fapk_channel_all.sh)
-- [fapkc.sh](/shell/fapk_channel_all.sh)
+- [fapkc.sh](/shell/fapkc.sh)
 
 ## 详细文章链接
 - [掘金](https://juejin.cn/post/6949901619689586719)
