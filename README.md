@@ -27,8 +27,8 @@ class EnvironmentConfig {
 - [fapkc.sh](/shell/fapk_channel_all.sh)
 
 ## 详细文章链接
-- [掘金](https://juejin.cn/user/764915820276439)
-- [CSDN](https://juejin.cn/user/764915820276439)
+- [掘金](https://juejin.cn/post/6949901619689586719)
+- [CSDN](https://blog.csdn.net/yy1300326388/article/details/115608078)
 
 
 ### 关于我
