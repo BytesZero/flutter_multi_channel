@@ -28,7 +28,7 @@ class EnvironmentConfig {
 
 ## 详细文章链接
 - [掘金](https://juejin.cn/post/6949901619689586719)
-- [CSDN](https://blog.csdn.net/yy1300326388/article/details/115608078)
+- [CSDN](https://blog.csdn.net/yy1300326388/article/details/115725551)
 
 
 ### 关于我
