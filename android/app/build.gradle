@@ -32,7 +32,10 @@ if (project.hasProperty('dart-defines')) {
     dartEnvironmentVariables = dartEnvironmentVariables + project.property('dart-defines')
             .split(',')
             .collectEntries { entry ->
-                def pair = URLDecoder.decode(entry).split('=')
+                // 1.22.6 版本
+                //def pair = URLDecoder.decode(entry).split('=')
+                // 2.2 版本
+                def pair = new String(entry.decodeBase64(), 'UTF-8').split('=')
                 [(pair.first()): pair.last()]
             }
 }
