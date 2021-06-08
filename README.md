@@ -1,6 +1,8 @@
 # Flutter 多渠道打包详解
 ![image](https://user-images.githubusercontent.com/8764899/114137633-0e7d1580-993f-11eb-9287-55265649d0c1.png)
 
+> 🔥🔥🔥 最新适配 Flutter 2.2 版本
+
 ## 多渠道打包介绍
 多渠道打包的主要作用是满足产品的运营需求，统计渠道和活动效果。
 在之前原生（Android、iOS）开发 App 有各种工具来辅助我们完成多渠道打包。
@@ -29,6 +31,9 @@ class EnvironmentConfig {
 ## 详细文章链接
 - [掘金](https://juejin.cn/post/6949901619689586719)
 - [CSDN](https://blog.csdn.net/yy1300326388/article/details/115725551)
+
+## 更新日志
+- [2021-06-08] [更新适配 Flutter 2.2 Gradle 脚本](https://github.com/yy1300326388/flutter_multi_channel/commit/7a78c80db1d7ed019048a094beae7efb1ac442b0)
 
 
 ### 关于我
